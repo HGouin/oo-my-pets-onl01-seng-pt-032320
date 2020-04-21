@@ -39,9 +39,7 @@ class Owner
         cat.owner = self
         return
       end
-
     end
-
   end
 
 
