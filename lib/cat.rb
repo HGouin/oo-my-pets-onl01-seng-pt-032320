@@ -1,5 +1,5 @@
 class Cat
-  attr_reader :name, :mood
+  attr_reader :name, :mood, :owner
   def initalize(name, owner)
     @name = name
     @owner = owner
