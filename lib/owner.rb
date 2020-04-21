@@ -28,8 +28,8 @@ class Owner
   def cats
     Cat.all
   end
-      
-    
-    
+
+
+
 
 end
