@@ -3,7 +3,7 @@ class Owner
 
 
   attr_accessor :cats, :dogs
-  attr_reader :species, :name
+  attr_reader :species, :name, :cats, :dogs
   def initialize(name)
     @name = name
     @species = "human"
