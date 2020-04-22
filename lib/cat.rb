@@ -1,6 +1,6 @@
 class Cat
 
-@@all = []
+@@all_owners = []
 
   attr_accessor :owner, :mood
   attr_reader :name
@@ -8,10 +8,12 @@ class Cat
     @name = name
     @owner = owner
     @mood = "nervous"
-    @@all << owners
+    @@all_owners << owner
   end
 
   def self.all
-    @@all
+    all = []
+    @@all_owners.each{|owner| all << owner}
+    all
   end
 end
