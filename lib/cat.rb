@@ -13,7 +13,7 @@ class Cat
 
   def self.all
     all = []
-    @@all_owners.each{|owner| all << owner}
+    @@all_owners.each{|owner| all << owner.cats.each{|cat| all << cat}}
     all
   end
 end
