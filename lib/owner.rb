@@ -42,6 +42,7 @@ class Owner
     Dog.all.each do |dog|
       if dog.name == dog_name
         dog.owner = self
+        @dogs << dog
         return
       end
     end
