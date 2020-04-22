@@ -44,6 +44,7 @@ class Owner
       end
     end
   end
+
   def buy_dog(dog_name)
     Dog.all.each do |dog|
       if dog.name == dog_name
